@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="shortcut icon" href="./img/favIcon.svg" type="image/x-icon" />
+
+    <!-- Fontawesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Comforty | Homepage</title>
+  </head>
+
+  <body class="font-Inter">
+    <header>
+      <div id="top_bar" class="hidden md:block py-[14px] bg-[#272343] px-24">
+        <div
+          class="max-w-[1320px] mx-auto text-white opacity-80 flex justify-between items-center text-[13px]"
+        >
+          <span
+            ><i class="fa-solid fa-check pr-2"></i>Free shipping on all orders
+            over $50</span
+          >
+          <ul class="flex gap-6">
+            <li>
+              <a href="#">Eng<i class="fa-solid fa-angle-down pl-[6px]"></i></a>
+            </li>
+            <li><a href="#">Faqs</a></li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-circle-info pr-[6px]"></i>Need Help</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="logo_bar" class="bg-[#F0F2F3] py-5 px-4 md:px-6 lg:px-24">
+        <div class="max-w-[1320px] mx-auto flex justify-between items-center">
+          <!-- Only Visible in Tab, Laptop and Desktop -->
+          <div class="hidden md:block">
+            <img src="./img/Logo.svg" alt="logo image" />
+          </div>
+
+          <!-- Only visible in Mobile device -->
+          <div class="md:hidden">
+            <img src="./img/Logo_sofa Icon.svg" alt="icon" />
+          </div>
+
+          <!-- Only visible in laptop or desktop -->
+          <div id="search" class="hidden lg:inline relative">
+            <input
+              class="px-4 h-11 w-[413px] rounded-[5px]"
+              type="search"
+              placeholder="Search here..."
+            />
+            <div class="absolute right-4 top-[25%]">
+              <img src="./img/search 1.svg" alt="search icon" />
+            </div>
+          </div>
+
+          <div id="left" class="flex gap-2 md:gap-3">
+            <button class="p-[11px] bg-white rounded-[8px] lg:hidden">
+              <img src="./img/search 1.svg" alt="icon" />
+            </button>
+
+            <button
+              class="px-4 py-[11px] bg-white rounded-[8px] flex gap-3 items-center"
+            >
+              <span class="flex gap-2 items-center">
+                <img src="./img/cart.svg" alt="cart icon" />
+                <span class="text-[12px] font-medium">Cart</span>
+              </span>
+              <span>
+                <img src="./img/No.svg" alt="icon" />
+              </span>
+            </button>
+
+            <button class="p-[11px] bg-white rounded-[8px]">
+              <img src="./img/Heart1.svg" alt="icon" />
+            </button>
+
+            <button class="p-[11px] bg-white rounded-[8px]">
+              <img src="./img/Profile.svg" alt="icon" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <nav
+        id="navbar"
+        class="py-[14px] px-4 md:px-6 lg:px-24 border-b-[1px] border-[#E1E3E5]"
+      >
+        <div
+          class="max-w-[1320px] mx-auto flex justify-between items-center text-[14px]"
+        >
+          <div class="flex gap-8 items-center">
+            <button
+              class="px-6 py-4 border-[1px] border-[#E1E3E5] rounded-[6px] flex gap-4 items-center"
+            >
+              <span><img src="./img/Menu.svg" alt="menu icon" /></span>
+              <span class="font-medium">All Categories</span>
+            </button>
+            <ul class="hidden md:flex gap-8 font-medium">
+              <li><a class="text-[#007580]" href="">Home</a></li>
+              <li><a href="">Shop</a></li>
+              <li><a href="">Product</a></li>
+              <li><a href="">Pages</a></li>
+              <li><a href="">About</a></li>
+            </ul>
+          </div>
+          <div>Contact: <span class="font-semibold">(808) 555-0111</span></div>
+        </div>
+      </nav>
+
+      <div
+        id="hero-image"
+        class="max-w-[1740px] mx-auto bg-[#F0F2F3] h-[850px] md:max-lg:h-[950px] rounded-b-[48px] relative"
+      >
+        <!-- Arrow will be visible in laptop and desktop only -->
+        <div
+          id="banner-arrow"
+          class="max-w-[1564px] mx-auto hidden lg:flex justify-between items-center relative lg:max-2xl:px-5"
+        >
+          <img
+            class="absolute top-[400px] cursor-pointer"
+            src="./img/Left-Arrow.svg"
+            alt="left arrow"
+          />
+          <img
+            class="absolute right-0 lg:max-2xl:right-[20px] top-[400px] cursor-pointer"
+            src="./img/Right-Arrow.svg"
+            alt="right arrow"
+          />
+        </div>
+
+        <div
+          id="actual-banner"
+          class="max-w-[1320px] mx-auto h-[90%] lg:max-2xl:h-[92%] 2xl:h-[100%] bg-no-repeat bg-right-top md:max-lg:bg-[top_right_50%] flex flex-col-reverse lg:flex-row items-center gap-[250px] md:gap-[500px] lg:gap-0 px-4 md:px-6 lg:px-24 2xl:px-0"
+          style="background-image: url(./img/BG_Shapes.png)"
+        >
+          <div
+            id="left_side"
+            class="flex flex-col gap-[26px] justify-center items-center lg:items-start h-full mt-[30px] md:mt-0"
+          >
+            <div class="text-center lg:text-left">
+              <span class="uppercase tracking-[1.68px] text-[14px]"
+                >Welcome to chairy</span
+              >
+              <h1
+                class="capitalize text-[34px] md:text-[51px] lg:text-[58px] 2xl:text-[68px] font-extrabold text-[#272343] leading-[110%]" style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);"
+              >
+                Best Furniture <br />
+                Collection for your <br class="md:max-lg:hidden" />
+                interior.
+              </h1>
+            </div>
+            <div>
+              <button
+                class="px-6 py-[14px] bg-[#029FAE] flex items-center justify-center gap-5 rounded-lg"
+              >
+                <span class="font-semibold text-white">Shop Now</span>
+                <img src="./img/Right24px.svg" alt="right arrow" />
+              </button>
+            </div>
+          </div>
+
+          <div
+            id="right_side"
+            class="w-full lg:w-[40%] 2xl:w-[50%] h-auto lg:h-full relative"
+          >
+            <img
+              class="max-w-[60%] md:max-w-[40%] lg:max-w-[100%] xl:max-w-full top-[80px] lg:top-[82px] right-[22%] md:right-[26%] lg:right-[-20%] 2xl:right-16 absolute"
+              src="./img/chair-Image.png"
+              alt="image of a chair"
+            />
+            <img
+              class="absolute top-12 md:top-12 lg:top-[82px] right-8 md:max-lg:right-32 lg:right-[-28%] 2xl:right-2 max-w-[100px] md:max-w-full"
+              src="./img/50_Discount.svg"
+              alt="discount"
+            />
+          </div>
+        </div>
+
+        <div
+          id="info-bar"
+          class="max-w-[1320px] mx-auto px-4 md:px-6 lg:px-24 2xl:px-0 absolute top-[80%] md:max-xl:top-[87%] 2xl:top-[87%] left-1/2 transform -translate-x-1/2 w-full"
+        >
+          <div>
+            <img class="mx-auto mb-9" src="./img/Tracker.svg" alt="3 dot" />
+          </div>
+
+          <div
+            id="four-info-block"
+            class="grid grid-cols-2 lg:grid-cols-4 lg:justify-items-start bg-white rounded-xl py-[50px] px-3 lg:px-[45px] 2xl:px-[70px] gap-x-3 gap-y-10 lg:max-xl:gap-6 shadow-[0px_24px_100px_0px_rgba(22,25,50,0.07)]"
+          >
+            <div
+              class="flex flex-col lg:flex-row lg:justify-center lg:items-center gap-3 lg:gap-4"
+            >
+              <div><img class="mx-auto" src="./img/box.svg" alt="icon" /></div>
+              <div class="text-center lg:text-left">
+                <span class="text-[18px] font-medium">Discount</span>
+                <p class="text-[15px] text-[#9A9CAA]">Every week new sales</p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col lg:flex-row lg:justify-center lg:items-center gap-4 lg:gap-4"
+            >
+              <div>
+                <img class="mx-auto" src="./img/delivery_van.svg" alt="icon" />
+              </div>
+              <div class="text-center lg:text-left">
+                <span class="text-[18px] font-medium">Free Delivery</span>
+                <p class="text-[15px] text-[#9A9CAA]">
+                  100% Free for all orders
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col lg:flex-row lg:justify-center lg:items-center gap-3 lg:gap-4"
+            >
+              <div>
+                <img class="mx-auto" src="./img/clock.svg" alt="icon" />
+              </div>
+              <div class="text-center lg:text-left">
+                <span class="text-[18px] font-medium">Great Support 24/7</span>
+                <p class="text-[15px] text-[#9A9CAA]">
+                  We care your experiences
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col lg:flex-row lg:justify-center lg:items-center gap-3 lg:gap-4"
+            >
+              <div><img class="mx-auto" src="./img/shield.svg" alt="" /></div>
+              <div class="text-center lg:text-left">
+                <span class="text-[18px] font-medium">Secure Payment</span>
+                <p class="text-[15px] text-[#9A9CAA]">
+                  100% Secure Payment Method
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Trusted Partner Logos -->
+      <section
+        id="trust_logos"
+        class="max-w-[1320px] mx-auto px-4 md:px-6 lg:px-24 2xl:px-0"
+      >
+        <div
+          class="mt-80 lg:mt-[70px] 2xl:mt-[120px] 2xl:[120px] flex justify-between items-center flex-wrap -space-y-2 lg:-space-y-0"
+        >
+          <span><img src="./img/trust-logos/Logo.png" alt="" /></span>
+          <span><img src="./img/trust-logos/Logo-1.png" alt="" /></span>
+          <span><img src="./img/trust-logos/Logo-2.png" alt="" /></span>
+          <span class="hidden lg:inline"
+            ><img src="./img/trust-logos/Logo-3.png" alt=""
+          /></span>
+          <span><img src="./img/trust-logos/Logo-5.png" alt="" /></span>
+          <span><img src="./img/trust-logos/Logo-4.png" alt="" /></span>
+          <span><img src="./img/trust-logos/Logo-6.png" alt="" /></span>
+        </div>
+      </section>
+
+      <!-- Featured Products -->
+      <section
+        id="featured_products"
+        class="max-w-[1320px] mx-auto px-4 md:px-6 lg:px-24 2xl:px-0 mt-9"
+      >
+        <div class="section-header" > <!--@apply directive used-->
+          <h2>Featured Products</h2> <!-- @apply directive used for h2 element -->
+
+          <div class="section-header-arrow"> <!--@apply directive used-->
+            <span class="cursor-pointer"><img src="./img/Arrow/Arrow_left.svg" alt="" /></span>
+            <span class="cursor-pointer"><img src="./img/Arrow/Arrow.svg" alt="" /></span>
+          </div>
+        </div>
+
+        <div class="all-cards"> <!--@apply directive used-->
+          <div class="w-full relative">
+            <div class="absolute top-5 left-5"><img src="./img/Card-images/new-tag.png" alt=""></div>
+            <div class="absolute top-5 right-5 cursor-pointer"><img src="./img/Card-images/Heart.svg" alt=""></div>
+            <div><img class="w-full" src="./img/Card-images/Image1.png" alt="product-img"></div>
+            <div class="flex justify-between items-center mt-[17.5px]">
+              <div>
+                <p class="text-[#007580]">Library Stool Chair</p>
+                <p class="text-[18px] font-semibold mt-[5px]">$20</p>
+              </div>
+              <span class="cursor-pointer"><img src="./img/Card-images/Add Cart-colored.svg" alt=""></span>
+            </div>
+          </div>
+
+          <div class="w-full relative">
+            <div class="absolute top-5 left-5"><img src="./img/Card-images/Products-Status.svg" alt="product status"></div>
+            <div><img class="w-full" src="./img/Card-images/Image2.png" alt="product-img"></div>
+            <div class="flex justify-between items-center mt-[17.5px]">
+              <div>
+                <p>Library Stool Chair</p>
+                <p class="text-[18px] font-semibold mt-[5px]">$20 <span class="opacity-50 font-light text-[14px]">$30</span></p>
+              </div>
+              <span class="cursor-pointer"><img src="./img/Card-images/Add-Cart-gray.svg" alt=""></span>
+            </div>
+          </div>
+
+          <div class="w-full">
+            <div><img class="w-full" src="./img/Card-images/Image3.png" alt="product-img"></div>
+            <div class="flex justify-between items-center mt-[17.5px]">
+              <div>
+                <p>Library Stool Chair</p>
+                <p class="text-[18px] font-semibold mt-[5px]">$20</p>
+              </div>
+              <span class="cursor-pointer"><img src="./img/Card-images/Add-Cart-gray.svg" alt=""></span>
+            </div>
+          </div>
+
+          <div class="w-full">
+            <div><img class="w-full" src="./img/Card-images/Image4.png" alt="product-img"></div>
+            <div class="flex justify-between items-center mt-[17.5px]">
+              <div>
+                <p>Library Stool Chair</p>
+                <p class="text-[18px] font-semibold mt-[5px]">$20</p>
+              </div>
+              <span class="cursor-pointer"><img src="./img/Card-images/Add-Cart-gray.svg" alt=""></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Top Categories -->
+      <section class="max-w-full relative">
+
+        <div class="hidden 2xl:block absolute bottom-0 lg:max-2xl:right-[-160px] 2xl:right-[-12px]"><img src="./img/top-categories-img/side-img.png" alt=""></div>
+
+        <div class="hidden 2xl:block absolute bottom-0 lg:left-[-160px] 2xl:left-[-12px]"><img src="./img/top-categories-img/left-side.png" alt=""></div>
+
+        <div class="max-w-[1320px] mx-auto px-4 md:px-6 lg:px-24 2xl:px-0 mt-[90px]">
+          <div class="section-header" > <!--@apply directive used-->
+            <h2>Top Categories</h2> <!-- @apply directive used for h2 element -->
+  
+            <div class="section-header-arrow"> <!--@apply directive used-->
+              <span class="cursor-pointer"><img src="./img/Arrow/Arrow_left.svg" alt="" /></span>
+              <span class="cursor-pointer"><img src="./img/Arrow/Arrow.svg" alt="" /></span>
+            </div>
+          </div>
+  
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+            <div class="w-full relative">
+              <img src="./img/top-categories-img/Image-1.png" alt="">
+              <div class="p-5 bg-black/70 absolute w-full bottom-0 rounded-b-[10px]">
+                <p class="text-white text-[20px] font-semibold">Wing Chair</p>
+                <span class="text-[14px] text-white">3,584 Products</span>
+              </div>
+            </div>
+  
+            <div class="w-full relative">
+              <img src="./img/top-categories-img/Image-2.png" alt="">
+              <div class="p-5 bg-black/70 absolute w-full bottom-0 rounded-b-[10px]">
+                <p class="text-white text-[20px] font-semibold">Wooden Chair</p>
+                <span class="text-[14px] text-white">157 Products</span>
+              </div>
+            </div>
+  
+            <div class="md:max-lg:move-to-center">
+              <div class="w-full relative">
+                <img src="./img/top-categories-img/Image-3.png" alt="">
+                <div class="p-5 bg-black/70 absolute w-full bottom-0 rounded-b-[10px]">
+                  <p class="text-white text-[20px] font-semibold">Desk Chair</p>
+                  <span class="text-[14px] text-white">154 Products</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Products -->
+      <section class="max-w-[1320px] mx-auto px-4 md:px-6 lg:px-24 2xl:px-0 mt-20">
+        <div class="text-center">
+          <h2>Our Products</h2>
+          <ul class="uppercase flex flex-wrap justify-center gap-2 mt-4">
+            <li class="p-2 border-b-2 border-[#007580]"><a href="">all</a></li>
+            <li class="p-2 text-[#9A9CAA]"><a href="">newest</a></li>
+            <li class="p-2 text-[#9A9CAA]"><a href="">trending</a></li>
+            <li class="p-2 text-[#9A9CAA]"><a href="">best sellers</a></li>
+            <li class="p-2 text-[#9A9CAA]"><a href="">featured</a></li>
+          </ul>
+        </div>
+
+        <div class="all-cards"> <!--@apply directive used-->
+          <div class="w-full relative">
+            <div class="absolute top-5 left-5"><img src="./img/Card-images/new-tag.png" alt=""></div>
+            <div class="absolute top-5 right-5 cursor-pointer"><img src="./img/Card-images/Heart.svg" alt=""></div>
+            <div><img class="w-full" src="./img/Card-images/Image1.png" alt="product-img"></div>
+            <div class="flex justify-between items-center mt-[17.5px]">
+              <div>
+                <p class="text-[#007580]">Library Stool Chair</p>
+                <p class="text-[18px] font-semibold mt-[5px]">$20</p>
+              </div>
+              <span class="cursor-pointer"><img src="./img/Card-images/Add Cart-colored.svg" alt=""></span>
+            </div>
+          </div>
+
+          <div class="w-full relative">
+            <div class="absolute top-5 left-5"><img src="./img/Card-images/Products-Status.svg" alt="product status"></div>
+            <div><img class="w-full" src="./img/Card-images/Image2.png" alt="product-img"></div>
+            <div class="flex justify-between items-center mt-[17.5px]">
+              <div>
+                <p>Library Stool Chair</p>
+                <p class="text-[18px] font-semibold mt-[5px]">$20 <span class="opacity-50 font-light text-[14px]">$30</span></p>
+              </div>
+              <span class="cursor-pointer"><img src="./img/Card-images/Add-Cart-gray.svg" alt=""></span>
+            </div>
+          </div>
+
+          <div class="w-full">
+            <div><img class="w-full" src="./img/Card-images/Image3.png" alt="product-img"></div>
+            <div class="flex justify-between items-center mt-[17.5px]">
+              <div>
+                <p>Library Stool Chair</p>
+                <p class="text-[18px] font-semibold mt-[5px]">$20</p>
+              </div>
+              <span class="cursor-pointer"><img src="./img/Card-images/Add-Cart-gray.svg" alt=""></span>
+            </div>
+          </div>
+
+          <div class="w-full">
+            <div><img class="w-full" src="./img/Card-images/Image4.png" alt="product-img"></div>
+            <div class="flex justify-between items-center mt-[17.5px]">
+              <div>
+                <p>Library Stool Chair</p>
+                <p class="text-[18px] font-semibold mt-[5px]">$20</p>
+              </div>
+              <span class="cursor-pointer"><img src="./img/Card-images/Add-Cart-gray.svg" alt=""></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="all-cards"> <!--@apply directive used-->
+          <div class="w-full relative">
+            <div class="absolute top-5 left-5"><img src="./img/Card-images/new-tag.png" alt=""></div>
+            <div class="absolute top-5 right-5 cursor-pointer"><img src="./img/Card-images/Heart.svg" alt=""></div>
+            <div><img class="w-full" src="./img/Card-images/Image1.png" alt="product-img"></div>
+            <div class="flex justify-between items-center mt-[17.5px]">
+              <div>
+                <p class="text-[#007580]">Library Stool Chair</p>
+                <p class="text-[18px] font-semibold mt-[5px]">$20</p>
+              </div>
+              <span class="cursor-pointer"><img src="./img/Card-images/Add Cart-colored.svg" alt=""></span>
+            </div>
+          </div>
+
+          <div class="w-full relative">
+            <div class="absolute top-5 left-5"><img src="./img/Card-images/Products-Status.svg" alt="product status"></div>
+            <div><img class="w-full" src="./img/Card-images/Image2.png" alt="product-img"></div>
+            <div class="flex justify-between items-center mt-[17.5px]">
+              <div>
+                <p>Library Stool Chair</p>
+                <p class="text-[18px] font-semibold mt-[5px]">$20 <span class="opacity-50 font-light text-[14px]">$30</span></p>
+              </div>
+              <span class="cursor-pointer"><img src="./img/Card-images/Add-Cart-gray.svg" alt=""></span>
+            </div>
+          </div>
+
+          <div class="w-full">
+            <div><img class="w-full" src="./img/Card-images/Image3.png" alt="product-img"></div>
+            <div class="flex justify-between items-center mt-[17.5px]">
+              <div>
+                <p>Library Stool Chair</p>
+                <p class="text-[18px] font-semibold mt-[5px]">$20</p>
+              </div>
+              <span class="cursor-pointer"><img src="./img/Card-images/Add-Cart-gray.svg" alt=""></span>
+            </div>
+          </div>
+
+          <div class="w-full">
+            <div><img class="w-full" src="./img/Card-images/Image4.png" alt="product-img"></div>
+            <div class="flex justify-between items-center mt-[17.5px]">
+              <div>
+                <p>Library Stool Chair</p>
+                <p class="text-[18px] font-semibold mt-[5px]">$20</p>
+              </div>
+              <span class="cursor-pointer"><img src="./img/Card-images/Add-Cart-gray.svg" alt=""></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- What client says about us -->
+      <section class="max-w-full bg-[#F0F2F3] py-20 mt-20">
+        <div class="max-w-[1320px] mx-auto px-4 md:px-6 lg:px-24 2xl:px-0">
+          <div class="section-header" > <!--@apply directive used-->
+            <h2 class="capitalize">What client says about us</h2> <!-- @apply directive used for h2 element -->
+  
+            <div class="section-header-arrow"> <!--@apply directive used-->
+              <span class="cursor-pointer"><img src="./img/Arrow/Arrow_left.svg" alt="" /></span>
+              <span class="cursor-pointer"><img src="./img/Arrow/Arrow.svg" alt="" /></span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+            <div class="p-10 rounded-xl bg-white shadow-[0px_8px_40px_0px_rgba(39,35,67,0.08)] w-full relative"> <!--Testimonial card-->
+              <div class="absolute right-0 bottom-0 w-[130px] md:max-lg:w-[140px] lg:w-auto"><img src="./img/testimonial-img/double_quotes_r 1.svg" alt=""></div>
+              <p class="pl-6 border-l-2 border-[#029FAE] text-[20px] text-[#636270]">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet mi nec massa tincidunt blandit et eu sem. Maecenas laoreet ultrices diam dignissim posuere. Aenean ultrices dui at ipsum sagittis, pharetra lacinia dui faucibus. In ac bibendum ex. Aenean dolor massa, euismod sit amet suscipit et“</p>
+
+              <div class="mt-[25px] flex gap-3 items-center">
+                <span><img src="./img/testimonial-img/Image.png" alt=""></span>
+                <div>
+                  <p class="text-[20px] font-medium leading-[140%]">Kristin Watson</p>
+                  <p class="text-[16px] font-normal text-[#9A9CAA]">Fashion Designer</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="p-10 rounded-xl bg-white shadow-[0px_8px_40px_0px_rgba(39,35,67,0.08)] w-full relative flex flex-col justify-between"> <!--Testimonial card-->
+              <div class="absolute right-0 bottom-0 w-[130px] md:max-lg:w-[140px] lg:w-auto"><img src="./img/testimonial-img/double_quotes_r 1.svg" alt=""></div>
+              <p class="pl-6 border-l-2 border-[#029FAE] text-[20px] text-[#636270]">“Nullam sapien elit, dignissim eu viverra et, scelerisque et felis. Aliquam egestas dui elit, quis tincidunt lacus aliquam et. Duis nulla velit, dignissim ut odio ac, eleifend luctus leo. Ut ac imperdiet velit. Aliquam semper ex in volutpat rutrum. “</p>
+
+              <div class="mt-[25px] flex gap-3 items-center">
+                <span><img src="./img/testimonial-img/Image2.png" alt=""></span>
+                <div>
+                  <p class="text-[20px] font-medium leading-[140%]">Esther Hward</p>
+                  <p class="text-[16px] font-normal text-[#9A9CAA]">Fashion Designer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recently Added -->
+      <section
+        id="featured_products"
+        class="max-w-[1320px] mx-auto px-4 md:px-6 lg:px-24 2xl:px-0 mt-20 mb-[105px]"
+      >
+        <div class="section-header" > <!--@apply directive used-->
+          <h2>Recently Added</h2> <!-- @apply directive used for h2 element -->
+
+          <div class="section-header-arrow"> <!--@apply directive used-->
+            <span class="cursor-pointer"><img src="./img/Arrow/Arrow_left.svg" alt="" /></span>
+            <span class="cursor-pointer"><img src="./img/Arrow/Arrow.svg" alt="" /></span>
+          </div>
+        </div>
+
+        <div class="all-cards"> <!--@apply directive used-->
+          <div class="w-full relative">
+            <div class="absolute top-5 left-5"><img src="./img/Card-images/new-tag.png" alt=""></div>
+            <div class="absolute top-5 right-5 cursor-pointer"><img src="./img/Card-images/Heart.svg" alt=""></div>
+            <div><img class="w-full" src="./img/Card-images/Image1.png" alt="product-img"></div>
+            <div class="flex justify-between items-center mt-[17.5px]">
+              <div>
+                <p class="text-[#007580]">Library Stool Chair</p>
+                <p class="text-[18px] font-semibold mt-[5px]">$20</p>
+              </div>
+              <span class="cursor-pointer"><img src="./img/Card-images/Add Cart-colored.svg" alt=""></span>
+            </div>
+          </div>
+
+          <div class="w-full relative">
+            <div class="absolute top-5 left-5"><img src="./img/Card-images/Products-Status.svg" alt="product status"></div>
+            <div><img class="w-full" src="./img/Card-images/Image2.png" alt="product-img"></div>
+            <div class="flex justify-between items-center mt-[17.5px]">
+              <div>
+                <p>Library Stool Chair</p>
+                <p class="text-[18px] font-semibold mt-[5px]">$20 <span class="opacity-50 font-light text-[14px]">$30</span></p>
+              </div>
+              <span class="cursor-pointer"><img src="./img/Card-images/Add-Cart-gray.svg" alt=""></span>
+            </div>
+          </div>
+
+          <div class="w-full">
+            <div><img class="w-full" src="./img/Card-images/Image3.png" alt="product-img"></div>
+            <div class="flex justify-between items-center mt-[17.5px]">
+              <div>
+                <p>Library Stool Chair</p>
+                <p class="text-[18px] font-semibold mt-[5px]">$20</p>
+              </div>
+              <span class="cursor-pointer"><img src="./img/Card-images/Add-Cart-gray.svg" alt=""></span>
+            </div>
+          </div>
+
+          <div class="w-full">
+            <div><img class="w-full" src="./img/Card-images/Image4.png" alt="product-img"></div>
+            <div class="flex justify-between items-center mt-[17.5px]">
+              <div>
+                <p>Library Stool Chair</p>
+                <p class="text-[18px] font-semibold mt-[5px]">$20</p>
+              </div>
+              <span class="cursor-pointer"><img src="./img/Card-images/Add-Cart-gray.svg" alt=""></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+    </main>
+
+    <footer class="max-w-full">
+      <div class="max-w-[1320px] mx-auto px-4 md:px-6 lg:px-24 2xl:px-0 py-20 flex justify-between flex-col lg:flex-row gap-10 lg:gap-0">
+
+        <!-- Logo abd Social icon -->
+        <div class="flex flex-col gap-6">
+          <div><img src="./img/Logo.svg" alt=""></div>
+          <p class="max-w-[400px] md:max-w-[450px] lg:max-w-[300px] 2xl:max-w-[350px] leading-6 text-[#272343]">Vivamus tristique odio sit amet velit semper, eu posuere turpis interdum.
+            Cras egestas purus </p>
+            <div class="flex gap-1 items-center">
+              <img src="./img/footer-social-icon/Group 44.svg" alt="">
+              <img src="./img/footer-social-icon/Group 48.svg" alt="">
+              <img src="./img/footer-social-icon/Group 45.svg" alt="">
+              <img src="./img/footer-social-icon/Group 50.svg" alt="">
+              <img src="./img/footer-social-icon/Group 46.svg" alt="">
+              <img src="./img/footer-social-icon/Group 47.svg" alt="">
+            </div>
+        </div>
+
+        <!-- Category -->
+         <div>
+          <p class="uppercase text-[14px] text-[#9A9CAA] mb-5">Category</p>
+          <ul class="text-[#272343] flex flex-col gap-3">
+            <li><a class="link-hover-effect" href="">Sofa</a></li>
+            <li><a class="link-hover-effect" href="">Armchair</a></li>
+            <li><a class="link-hover-effect" href="">Wing Chair</a></li>
+            <li><a class="link-hover-effect" href="">Desk Chair</a></li>
+            <li><a class="link-hover-effect" href="">Wooden Chair</a></li>
+            <li><a class="link-hover-effect" href="">Park Bench</a></li>
+          </ul>
+         </div>
+         
+        <!-- Support -->
+         <div>
+          <p class="uppercase text-[14px] text-[#9A9CAA] mb-5">Support</p>
+          <ul class="text-[#272343] flex flex-col gap-3">
+            <li><a class="link-hover-effect" href="">Help & Support</a></li>
+            <li><a class="link-hover-effect" href="">Tearms & Conditions</a></li>
+            <li><a class="link-hover-effect" href="">Privacy Policy</a></li>
+            <li><a class="link-hover-effect" href="">Help</a></li>
+          </ul>
+         </div>
+
+         <!-- Newsletter -->
+         <div>
+          <p class="uppercase text-[14px] text-[#9A9CAA] mb-5">newsletter</p>
+          <div>
+            <input class="border-[1px] border-[#E1E3E5] rounded-lg px-5 py-[15px] w-full md:w-1/2 lg:w-[255px] 2xl:w-[300px]" type="email" placeholder="Your email">
+            <button class="px-6 py-[14px] bg-[#029FAE] rounded-lg text-white font-semibold mt-4 md:mt-0 ml-0 md:ml-3 w-full md:w-auto">Subscribe</button>
+          </div>
+          <p class="w-[400px] text-[15px] text-[#272343] mt-[15px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim.</p>
+         </div>
+      </div>
+      <hr>
+      <div class="max-w-[1320px] mx-auto px-4 md:px-6 lg:px-24 2xl:px-0 py-6 flex justify-between items-center md:items-start flex-col lg:flex-row gap-6">
+        <span class="text-[#9A9CAA]">@ 2021 - Blogy - Designed & Develop by <span class="text-black">Zakirsoft</span></span>
+        <span><img src="./img/payment-options.svg" alt="payment-options-icon"></span>
+      </div>
+    </footer>
+  </body>
+</html>

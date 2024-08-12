@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h2 {
+        @apply font-semibold text-[28px] md:text-[32px];
+    }
+}
+
+@layer components {
+    .section-header {
+        @apply text-center lg:flex justify-between items-center;
+    }
+
+    .section-header-arrow {
+        @apply hidden lg:flex justify-between gap-[18px];
+    }
+
+    .all-cards {
+        @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10;
+    }
+
+    .move-to-center {
+        @apply right-1/2 transform translate-x-1/2;
+    }
+
+    .link-hover-effect {
+        @apply hover:text-[#007580] hover:border-b-[1px] hover:border-[#007580] pb-[2px] transition-all duration-300 ease-in;
+    }
+}
